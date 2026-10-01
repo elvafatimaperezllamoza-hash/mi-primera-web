@@ -368,6 +368,169 @@ h2 {
     line-height: 1.4;
 }
 
+.magazine-section {
+    padding: 88px 0 105px;
+    border-top: 1px solid var(--line);
+}
+
+.magazine-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.magazine-heading h2 {
+    max-width: 650px;
+}
+
+.magazine-heading .section-copy {
+    margin-bottom: 6px;
+}
+
+.magazine-lead {
+    max-width: 780px;
+    margin: 42px 0 28px;
+    font-size: 1.35rem;
+    line-height: 1.5;
+}
+
+.faith-priorities {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.priority-item {
+    min-height: 220px;
+    padding: 22px;
+    background: var(--yellow);
+}
+
+.priority-item:nth-child(2) {
+    background: var(--blue);
+}
+
+.priority-item:nth-child(3) {
+    background: var(--green);
+}
+
+.priority-item h3,
+.practice-panel h3 {
+    margin: 38px 0 10px;
+    font-size: 1.55rem;
+}
+
+.priority-item p:not(.card-verse) {
+    max-width: 300px;
+    line-height: 1.55;
+}
+
+.priority-item .card-verse {
+    margin: 18px 0 0;
+    color: var(--subtitle-red);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.76rem;
+    font-weight: bold;
+}
+
+.priority-item .card-verse small {
+    font-weight: normal;
+}
+
+.magazine-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-top: 76px;
+    padding-top: 42px;
+    border-top: 1px solid var(--line);
+}
+
+.practice-panel h3 {
+    margin: 0 0 28px;
+    font-size: 2rem;
+}
+
+.practice-list {
+    margin: 0;
+}
+
+.practice-list > div {
+    padding: 17px 0;
+    border-top: 1px solid var(--line);
+}
+
+.practice-list dt,
+.daily-rhythm li > span {
+    font-weight: bold;
+}
+
+.practice-list dd {
+    margin: 7px 0 0;
+    color: var(--muted);
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+.practice-list dd span,
+.daily-rhythm small {
+    display: block;
+    margin-top: 6px;
+    color: var(--subtitle-red);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.73rem;
+    font-weight: bold;
+}
+
+.fasting-note {
+    margin: 20px 0 0;
+    padding: 15px 17px;
+    background: rgba(185, 220, 245, 0.62);
+    font-size: 0.82rem;
+    line-height: 1.55;
+}
+
+.daily-rhythm {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: daily-step;
+}
+
+.daily-rhythm li {
+    position: relative;
+    padding: 15px 0 15px 42px;
+    border-top: 1px solid var(--line);
+    counter-increment: daily-step;
+}
+
+.daily-rhythm li::before {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    color: var(--subtitle-red);
+    content: "0" counter(daily-step);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-weight: bold;
+}
+
+.daily-rhythm p {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.magazine-footnote {
+    margin: 34px 0 0;
+    color: var(--muted);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    line-height: 1.5;
+}
+
 .card-verse small {
     font-size: 0.68rem;
     font-weight: normal;
@@ -583,6 +746,7 @@ h2 {
 
     h1 { font-size: clamp(2.8rem, 13vw, 4.3rem); }
     .hero-art { min-height: 280px; margin-top: 65px; }
+    .art-sticker { right: 0; }
     .idea-collage { height: 280px; }
     .idea-photo-main { top: 16px; left: 10%; width: 80%; }
     .about-section { display: block; padding-top: 70px; }
@@ -591,6 +755,17 @@ h2 {
     .details-grid { grid-template-columns: 1fr; padding-bottom: 85px; }
     .detail-card { min-height: 180px; }
     .detail-card h3 { margin-top: 45px; }
+    .site-header { align-items: flex-start; flex-wrap: wrap; gap: 18px; }
+    nav { flex-wrap: wrap; justify-content: flex-end; row-gap: 10px; }
+    .magazine-section { padding: 70px 0 80px; }
+    .magazine-heading { display: block; }
+    .magazine-heading .section-copy { margin-top: 24px; }
+    .magazine-lead { margin: 30px 0 22px; font-size: 1.15rem; }
+    .faith-priorities,
+    .magazine-columns { grid-template-columns: 1fr; }
+    .priority-item { min-height: 0; }
+    .priority-item h3 { margin-top: 28px; }
+    .magazine-columns { gap: 38px; margin-top: 52px; padding-top: 32px; }
     .moments-section { padding: 70px 0 85px; }
     .moments-heading { display: block; margin-bottom: 30px; }
     .moments-heading .section-copy { margin-top: 25px; }
