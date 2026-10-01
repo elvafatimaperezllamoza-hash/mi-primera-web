@@ -145,14 +145,19 @@ h1 {
     font-size: clamp(2.7rem, 5.5vw, 5.2rem);
     line-height: 0.94;
     letter-spacing: -0.04em;
+    font-weight: 700;
+    text-align: center;
 }
 
 .intro,
 .section-copy {
-    max-width: 480px;
+    max-width: 620px;
+    margin-right: auto;
+    margin-left: auto;
     color: var(--muted);
     font-size: 1rem;
     line-height: 1.7;
+    text-align: center;
 }
 
 .verse-kicker,
@@ -166,12 +171,14 @@ h1 {
 
 .verse-kicker {
     margin: 0 0 18px;
+    text-align: center;
 }
 
 .verse-highlight {
     margin: 24px 0 0;
-    padding-left: 14px;
-    border-left: 3px solid var(--silver);
+    color: var(--subtitle-red);
+    font-weight: 700;
+    text-align: center;
 }
 
 .verse-kicker small,
@@ -183,6 +190,7 @@ h1 {
 .actions {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 28px;
     margin-top: 32px;
 }
@@ -322,6 +330,8 @@ h2 {
     font-size: clamp(2.2rem, 5vw, 4.5rem);
     line-height: 0.98;
     letter-spacing: -0.04em;
+    font-weight: 700;
+    text-align: center;
 }
 
 .details-grid {
@@ -350,6 +360,8 @@ h2 {
 
 .values-heading h2 {
     max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .values-heading .section-copy {
@@ -376,22 +388,29 @@ h2 {
 .detail-card h3 {
     margin: 65px 0 10px;
     font-size: 1.7rem;
+    color: var(--ink);
+    font-weight: 700;
+    text-align: center;
 }
 
 .detail-card p {
-    max-width: 230px;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 0;
     line-height: 1.5;
+    text-align: center;
 }
 
 .detail-card .card-verse {
-    max-width: 260px;
+    max-width: 300px;
     margin-top: 18px;
     color: var(--subtitle-red);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.75rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.4;
+    text-align: center;
 }
 
 .magazine-section {
@@ -404,10 +423,13 @@ h2 {
     align-items: end;
     justify-content: space-between;
     gap: 48px;
+    text-align: center;
 }
 
 .magazine-heading h2 {
     max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .magazine-heading .section-copy {
@@ -416,9 +438,11 @@ h2 {
 
 .magazine-lead {
     max-width: 780px;
-    margin: 42px 0 28px;
+    margin: 42px auto 28px;
     font-size: 1.35rem;
     line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
 }
 
 .faith-priorities {
@@ -447,11 +471,17 @@ h2 {
 .practice-panel h3 {
     margin: 38px 0 10px;
     font-size: 1.55rem;
+    color: var(--subtitle-red);
+    font-weight: 700;
+    text-align: center;
 }
 
 .priority-item p:not(.card-verse) {
     max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
     line-height: 1.55;
+    text-align: center;
 }
 
 .priority-item .card-verse {
@@ -459,7 +489,8 @@ h2 {
     color: var(--subtitle-red);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.76rem;
-    font-weight: bold;
+    font-weight: 700;
+    text-align: center;
 }
 
 .priority-item .card-verse small {
@@ -474,16 +505,20 @@ h2 {
     margin: 68px 0 28px;
     padding-top: 35px;
     border-top: 1px solid var(--line);
+    text-align: center;
 }
 
 .routine-heading h3 {
     margin: 0;
     color: var(--subtitle-red);
     font-size: 2rem;
+    font-weight: 700;
 }
 
 .routine-heading .section-copy {
     margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .routine-grid {
@@ -510,6 +545,7 @@ h2 {
 
 .routine-copy {
     padding: 15px 2px 18px;
+    text-align: center;
 }
 
 .routine-copy .card-number {
@@ -520,21 +556,24 @@ h2 {
 .routine-copy h4 {
     margin: 9px 0 7px;
     font-size: 1.18rem;
+    color: var(--ink);
+    font-weight: 700;
 }
 
 .routine-copy p {
-    margin: 0;
+    max-width: 300px;
+    margin: 0 auto;
     color: var(--muted);
     font-size: 0.88rem;
     line-height: 1.55;
 }
 
 .routine-copy .routine-verse {
-    margin-top: 12px;
+    margin: 12px auto 0;
     color: var(--subtitle-red);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.68rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
 }
 
@@ -576,6 +615,7 @@ h2 {
     background: linear-gradient(transparent 70%, rgba(255, 231, 163, 0.92) 70%);
     color: var(--ink);
     font-weight: bold;
+    text-align: center;
     box-shadow: none;
 }
 
@@ -601,10 +641,13 @@ h2 {
     justify-content: space-between;
     gap: 50px;
     margin-bottom: 45px;
+    text-align: center;
 }
 
 .moments-heading h2 {
     margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .moments-heading .section-copy {
@@ -652,6 +695,8 @@ h2 {
     font-weight: bold;
     line-height: 1.35;
     max-width: 80%;
+    font-weight: 700;
+    text-align: center;
 }
 
 .gallery-photo figcaption small {
@@ -690,6 +735,7 @@ h2 {
 
 .section-heading h2 {
     margin: 0 auto 38px;
+    font-weight: 700;
 }
 
 .video-wrapper {
@@ -801,6 +847,7 @@ h2 {
     }
 
     h1 { font-size: clamp(2.8rem, 13vw, 4.3rem); }
+    .hero-copy > .intro { margin-right: auto; margin-left: auto; }
     .hero-art { min-height: 280px; margin-top: 65px; }
     .art-sticker { right: 0; }
     .idea-collage { height: 280px; }
