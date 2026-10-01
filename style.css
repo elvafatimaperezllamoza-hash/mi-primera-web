@@ -534,6 +534,32 @@ h2 {
     font-weight: normal;
 }
 
+.biblical-message,
+.verse-kicker,
+.verse-highlight,
+.profile-photo figcaption,
+.card-verse,
+.routine-verse,
+.gallery-photo figcaption {
+    padding: 10px 12px;
+    border: 3px solid var(--subtitle-red);
+    background: var(--yellow);
+    color: var(--ink);
+    font-weight: bold;
+    box-shadow: 3px 3px 0 rgba(201, 87, 97, 0.28);
+}
+
+.biblical-message small,
+.verse-kicker small,
+.verse-highlight small,
+.profile-photo figcaption small,
+.card-verse small,
+.routine-verse small,
+.gallery-photo figcaption small {
+    color: var(--subtitle-red);
+    font-weight: bold;
+}
+
 .moments-section {
     padding: 85px 0 115px;
     border-top: 1px solid var(--line);
