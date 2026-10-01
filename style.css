@@ -388,40 +388,6 @@ h2 {
     margin-bottom: 6px;
 }
 
-.magazine-visual {
-    position: relative;
-    display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
-    align-items: end;
-    gap: 0;
-    margin: 42px 0 0;
-    background: var(--ink);
-}
-
-.magazine-visual img {
-    display: block;
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    object-position: center 54%;
-}
-
-.magazine-visual figcaption {
-    padding: 25px;
-    color: #fff;
-    font-size: 1.1rem;
-    line-height: 1.5;
-}
-
-.magazine-visual figcaption small {
-    display: block;
-    margin-top: 12px;
-    color: var(--yellow);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.72rem;
-    line-height: 1.5;
-}
-
 .magazine-lead {
     max-width: 780px;
     margin: 42px 0 28px;
@@ -472,89 +438,86 @@ h2 {
     font-weight: normal;
 }
 
-.magazine-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    margin-top: 76px;
-    padding-top: 42px;
+.routine-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 68px 0 28px;
+    padding-top: 35px;
     border-top: 1px solid var(--line);
 }
 
-.practice-panel h3 {
-    margin: 0 0 28px;
+.routine-heading h3 {
+    margin: 0;
+    color: var(--subtitle-red);
     font-size: 2rem;
 }
 
-.practice-list {
-    margin: 0;
+.routine-heading .section-copy {
+    margin-bottom: 0;
 }
 
-.practice-list > div {
-    padding: 17px 0;
-    border-top: 1px solid var(--line);
+.routine-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px 18px;
 }
 
-.practice-list dt,
-.daily-rhythm li > span {
-    font-weight: bold;
+.routine-card {
+    min-width: 0;
+    border-bottom: 1px solid var(--line);
 }
 
-.practice-list dd {
-    margin: 7px 0 0;
-    color: var(--muted);
-    font-size: 0.94rem;
-    line-height: 1.6;
-}
-
-.practice-list dd span,
-.daily-rhythm small {
+.routine-card img {
     display: block;
-    margin-top: 6px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background: var(--silver);
+}
+
+.routine-copy {
+    padding: 15px 2px 18px;
+}
+
+.routine-copy .card-number {
+    color: var(--subtitle-red);
+    font-size: 0.68rem;
+}
+
+.routine-copy h4 {
+    margin: 9px 0 7px;
+    font-size: 1.18rem;
+}
+
+.routine-copy p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+.routine-copy .routine-verse {
+    margin-top: 12px;
     color: var(--subtitle-red);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.73rem;
+    font-size: 0.68rem;
     font-weight: bold;
+    line-height: 1.5;
+}
+
+.routine-verse small {
+    font-weight: normal;
 }
 
 .fasting-note {
-    margin: 20px 0 0;
-    padding: 15px 17px;
+    margin: 12px 0 0 !important;
+    padding: 11px 12px;
     background: rgba(185, 220, 245, 0.62);
-    font-size: 0.82rem;
-    line-height: 1.55;
-}
-
-.daily-rhythm {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    counter-reset: daily-step;
-}
-
-.daily-rhythm li {
-    position: relative;
-    padding: 15px 0 15px 42px;
-    border-top: 1px solid var(--line);
-    counter-increment: daily-step;
-}
-
-.daily-rhythm li::before {
-    position: absolute;
-    top: 16px;
-    left: 0;
-    color: var(--subtitle-red);
-    content: "0" counter(daily-step);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.72rem;
-    font-weight: bold;
-}
-
-.daily-rhythm p {
-    margin: 6px 0 0;
-    color: var(--muted);
-    font-size: 0.92rem;
-    line-height: 1.55;
+    color: var(--ink) !important;
+    font-size: 0.74rem !important;
+    line-height: 1.45 !important;
 }
 
 .magazine-footnote {
@@ -794,15 +757,19 @@ h2 {
     .magazine-section { padding: 70px 0 80px; }
     .magazine-heading { display: block; }
     .magazine-heading .section-copy { margin-top: 24px; }
-    .magazine-visual { grid-template-columns: 1fr; margin-top: 30px; }
-    .magazine-visual img { height: 230px; }
-    .magazine-visual figcaption { padding: 18px; font-size: 1rem; }
     .magazine-lead { margin: 30px 0 22px; font-size: 1.15rem; }
     .faith-priorities,
-    .magazine-columns { grid-template-columns: 1fr; }
+    .routine-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .priority-item { min-height: 0; }
     .priority-item h3 { margin-top: 28px; }
-    .magazine-columns { gap: 38px; margin-top: 52px; padding-top: 32px; }
+    .routine-heading { display: block; margin-top: 48px; padding-top: 28px; }
+    .routine-heading h3 { font-size: 1.65rem; }
+    .routine-heading .section-copy { margin-top: 14px; }
+    .routine-grid { gap: 22px 12px; }
+    .routine-copy { padding: 12px 0 14px; }
+    .routine-copy h4 { font-size: 1.02rem; }
+    .routine-copy p { font-size: 0.8rem; }
+    .routine-copy .routine-verse { font-size: 0.64rem; }
     .moments-section { padding: 70px 0 85px; }
     .moments-heading { display: block; margin-bottom: 30px; }
     .moments-heading .section-copy { margin-top: 25px; }
