@@ -231,10 +231,10 @@ h1 {
 
 .idea-photo {
     position: absolute;
-    padding: 9px;
-    background: var(--silver);
-    border: 4px solid var(--subtitle-red);
-    box-shadow: 15px 15px 0 rgba(20, 33, 61, 0.2);
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
 }
 
 .idea-photo img {
@@ -284,10 +284,10 @@ h1 {
 .profile-photo {
     position: relative;
     margin: 0;
-    padding: 14px 14px 48px;
-    background: var(--silver);
-    border: 4px solid var(--subtitle-red);
-    transform: rotate(-2deg);
+    padding: 0;
+    background: transparent;
+    border: 0;
+    transform: none;
 }
 
 .profile-photo img {
@@ -299,9 +299,8 @@ h1 {
 }
 
 .profile-photo figcaption {
-    position: absolute;
-    right: 20px;
-    bottom: 15px;
+    margin-top: 12px;
+    color: var(--ink);
     color: var(--ink);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.78rem;
@@ -329,13 +328,39 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    padding: 45px 0 120px;
+    padding: 0;
+}
+
+.values-section {
+    padding: 45px 0 100px;
+}
+
+.values-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.7fr);
+    align-items: end;
+    gap: 16px 48px;
+    margin-bottom: 30px;
+}
+
+.values-heading .eyebrow {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+.values-heading h2 {
+    max-width: 600px;
+}
+
+.values-heading .section-copy {
+    margin: 0 0 4px;
 }
 
 .detail-card {
     min-height: 220px;
-    padding: 25px;
-    border: 3px solid var(--subtitle-red);
+    padding: 20px 0;
+    border: 0;
+    border-top: 1px solid var(--line);
 }
 
 .coral-card { background: var(--yellow); }
@@ -404,17 +429,18 @@ h2 {
 
 .priority-item {
     min-height: 220px;
-    padding: 22px;
-    background: var(--yellow);
-    border: 3px solid var(--subtitle-red);
+    padding: 18px 0;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
 }
 
 .priority-item:nth-child(2) {
-    background: var(--blue);
+    background: transparent;
 }
 
 .priority-item:nth-child(3) {
-    background: var(--green);
+    background: transparent;
 }
 
 .priority-item h3,
@@ -468,15 +494,16 @@ h2 {
 
 .routine-card {
     min-width: 0;
-    border: 3px solid var(--subtitle-red);
-    padding: 8px;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 0 0 12px;
 }
 
 .routine-card img {
     display: block;
     width: 100%;
     aspect-ratio: 4 / 3;
-    border: 4px solid var(--subtitle-red);
+    border: 0;
     object-fit: cover;
     background: var(--silver);
 }
@@ -544,12 +571,12 @@ h2 {
 .card-verse,
 .routine-verse,
 .gallery-photo figcaption {
-    padding: 10px 12px;
-    border: 3px solid var(--subtitle-red);
-    background: var(--yellow);
+    padding: 0 0 3px;
+    border: 0;
+    background: linear-gradient(transparent 70%, rgba(255, 231, 163, 0.92) 70%);
     color: var(--ink);
     font-weight: bold;
-    box-shadow: 3px 3px 0 rgba(201, 87, 97, 0.28);
+    box-shadow: none;
 }
 
 .biblical-message small,
@@ -597,7 +624,7 @@ h2 {
     margin: 0;
     overflow: hidden;
     background: var(--green);
-    border: 4px solid var(--subtitle-red);
+    border: 0;
 }
 
 .gallery-photo img {
@@ -616,8 +643,9 @@ h2 {
     position: absolute;
     right: 12px;
     bottom: 12px;
-    padding: 8px 10px;
-    background: var(--yellow);
+    padding: 4px 0;
+    border: 0;
+    background: linear-gradient(transparent 62%, rgba(255, 231, 163, 0.95) 62%);
     color: var(--ink);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.68rem;
@@ -670,8 +698,8 @@ h2 {
     margin: 0 auto 24px;
     overflow: hidden;
     background: var(--blue);
-    border: 3px solid var(--subtitle-red);
-    box-shadow: 12px 12px 0 var(--coral);
+    border: 0;
+    box-shadow: none;
 }
 
 .video-wrapper iframe {
@@ -780,7 +808,11 @@ h2 {
     .about-section { display: block; padding-top: 70px; }
     .section-copy { margin-top: 28px; }
     .profile-photo { margin-top: 45px; }
-    .details-grid { grid-template-columns: 1fr; padding-bottom: 85px; }
+    .values-section { padding: 35px 0 75px; }
+    .values-heading { display: block; margin-bottom: 24px; }
+    .values-heading h2 { margin-bottom: 0; }
+    .values-heading .section-copy { margin-top: 18px; }
+    .details-grid { grid-template-columns: 1fr; }
     .detail-card { min-height: 180px; }
     .detail-card h3 { margin-top: 45px; }
     .site-header { align-items: flex-start; flex-wrap: wrap; gap: 18px; }
